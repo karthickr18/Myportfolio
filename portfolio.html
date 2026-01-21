@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Karthick R | Portfolio</title>
+
+<style>
+:root{
+  --navy:#0f1329;
+  --navy-light:#1c2148;
+  --yellow:#f4c430;
+  --white:#ffffff;
+  --gray:#dcdcdc;
+  --page-bg:#e6e4ff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:var(--page-bg);
+  color:var(--white);
+  line-height:1.6;
+}
+
+/* FULL PAGE CONTAINER */
+.container{
+  width:100%;
+  min-height:100vh;
+  background:var(--navy);
+}
+
+/* HEADER */
+.header{
+  display:flex;
+  align-items:center;
+  padding:35px 70px 70px 0;
+  gap:5px;
+}
+
+/* IMAGE WRAPPER */
+.image-wrapper{
+  position:relative;
+}
+
+/* IMAGE */
+.image-wrapper img{
+  width:600px;
+  height:655px;
+  object-fit:cover;
+  background:white;
+}
+
+/* TOP RIGHT LINE */
+.image-wrapper::before{
+  content:"";
+  position:absolute;
+  top:0;
+  right:-900px;
+  width:260px;
+  height:3px;
+  background:var(--yellow);
+}
+
+/* BOTTOM RIGHT LINE */
+.image-wrapper::after{
+  content:"";
+  position:absolute;
+  bottom:5px;
+  right:-550px;
+  width:520px;
+  height:3px;
+  background:var(--yellow);
+}
+
+/* CONTENT */
+.header-content{
+  flex:1;
+  text-align:center;
+  margin-top:50px;
+}
+
+.header-content h1{
+  font-size:38px;
+  letter-spacing:3px;
+  color:var(--yellow);
+}
+
+.header-content p{
+  font-size:18px;
+  margin-top:10px;
+  color:var(--gray);
+}
+
+/* NAVIGATION */
+nav{
+  margin-top:100px;
+}
+
+nav a{
+  color:var(--white);
+  text-decoration:none;
+  margin:0 10px;
+  font-size:12px;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:var(--yellow);
+}
+
+/* SECTION */
+section{
+  background:var(--navy-light);
+  margin:40px 80px;
+  padding:40px;
+  position:relative;
+}
+
+/* YELLOW BAR */
+section::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:80px;
+  height:6px;
+  background:var(--yellow);
+}
+
+section h2{
+  margin-bottom:18px;
+  color:var(--yellow);
+  font-size:22px;
+  letter-spacing:2px;
+}
+
+/* SKILLS */
+.skills span{
+  display:inline-block;
+  border:1px solid var(--yellow);
+  color:var(--white);
+  padding:6px 10px;
+  margin:6px 6px 0 0;
+  font-size:13px;
+}
+
+/* LINKS */
+a{
+  color:var(--yellow);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  background:#0a0d1f;
+  font-size:14px;
+  color:var(--gray);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+
+    <div class="image-wrapper">
+      <img src="portfolioprofile.jpeg" alt="Karthick R">
+    </div>
+
+    <div class="header-content">
+      <h1>Hi, I'm Karthick R!</h1>
+      <p>.NET Full Stack Developer</p>
+
+      <nav>
+        <a href="#about">About</a> | 
+        <a href="#skills">Skills</a> |
+        <a href="#education">Education</a> |
+        <a href="#internship">Internship</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#certificates">Certificates</a> |
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>ABOUT ME</h2>
+    <p>
+      I am Karthick, an MCA graduate with 0.6+ years of internship experience as a
+      .NET Full Stack Developer. I have hands-on experience in building web and desktop
+      applications using modern front-end and back-end technologies.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>SKILLS</h2>
+
+    <h4>Web Technologies</h4>
+    <div class="skills">
+      <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+    </div>
+
+    <h4 style="margin-top:15px;">Programming</h4>
+    <div class="skills">
+      <span>C#</span><span>.NET</span><span>Python</span>
+    </div>
+
+    <h4 style="margin-top:15px;">Frameworks</h4>
+    <div class="skills">
+      <span>ASP.NET Core MVC</span><span>Web API</span>
+    </div>
+
+    <h4 style="margin-top:15px;">Desktop & Database</h4>
+    <div class="skills">
+      <span>WPF</span><span>XAML</span><span>MVVM</span>
+      <span>SQL Server</span><span>ADO.NET</span><span>Azure</span>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>EDUCATION</h2>
+    <p><strong>B.Sc. Computer Science</strong><br>
+    Dr. G. R. Damodaran College of Science<br>
+    2018 – 2021</p><br>
+
+    <p><strong>Master of Computer Applications (MCA)</strong><br>
+    Dr. G. R. Damodaran College of Science<br>
+    2021 – 2023</p>
+  </section>
+
+  <!-- INTERNSHIP -->
+  <section id="internship">
+    <h2>INTERNSHIP</h2>
+    <p><strong>JSQUARE</strong> | Aug 2025 – Present</p><br>
+    <p>
+      During my internship at JSQUARE, I worked as a .NET Full Stack Developer on both web and Windows-based applications. I gained hands-on experience with .NET Core, C#, ASP.NET Core, Web API, WPF, MVC, MVVM, XAML, and SQL Server, contributing to real-time application development and feature implementation.
+
+I     was involved in designing user interfaces, implementing business logic, integrating databases, and fixing bugs, which strengthened my understanding of object-oriented programming and application architecture. Additionally, I gained exposure to Azure services, helping me understand professional IT standards and team collaboration.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>PROJECTS</h2>
+    <p><strong>1.OfficeEntryPro</strong> – A C# WPF desktop application for managing employees, bookings, and office operations, showcasing strong core C# and WPF concepts.
+    Tech: C#, WPF, XAML, OOP.</p><br>
+    <p><strong>2.ProductManagerPro</strong> – A WPF desktop app to add, view, and categorize products with data stored in JSON files, focusing on file handling and clean UI design.
+    Tech: C#, WPF, JSON, Data Binding.</p><br>
+    <p><strong>3.SmartOffice</strong> – A full-fledged office management system with authentication, employee, product, billing, and reporting modules using a layered architecture.
+    Tech: C#, WPF, SQL Server, ADO.NET, MVVM.</p><br>
+    <p><strong>4.Personal Portfolio Website</strong> – A responsive personal portfolio website showcasing skills and projects with a clean and professional layout.
+    Tech: HTML, CSS.</p>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <h2>CERTIFICATES</h2>
+    <ul>
+      <li>.NET Full Stack – JSQUARE</li>
+      <li>Software Testing – Isoft</li>
+      <li>Cybersecurity – IBM SkillsBuild</li>
+      <li>Diploma in Robotics (PGDR)</li>
+      <li>Computer Hardware & Maintenance</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>CONTACT</h2>
+    <p>Email: karthickraman18@gmail.com</p>
+    <p>Phone: +91 9655492792</p>
+    <p>
+      <a href="https://www.linkedin.com/in/karthick-r-18ba04205" target="_blank" style="color:white;">LinkedIn</a> |
+      <a href="https://github.com/karthickr18" target="_blank" style="color:white;">GitHub</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Karthick R. All rights reserved.
+  </footer>
+
+</div>
+
+</body>
+</html>
